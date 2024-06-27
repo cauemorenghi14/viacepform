@@ -1,7 +1,9 @@
 import { useCep } from "./cep/useCep";
 
 export const App = () => {
+
   const { register, handleSubmit, handleFormSubmit, errors } = useCep()
+  
   return (
     <div className="App">
       <form onSubmit={handleSubmit(handleFormSubmit)}>

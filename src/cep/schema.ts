@@ -7,7 +7,7 @@ export const schemaForm = z
       rua: z.string().min(1, "Por favor, insira uma rua válida"),
       numero: z.string().min(1, "Por favor, insira um número válido"),
       cidade: z.string().min(1, "Por favor, insira uma cidade válida"),
-      estado: z.string().min(9, "Por favor, insira um estado válido"),
+      estado: z.string().min(1, "Por favor, insira um estado válido"),
       complemento: z.string(),
       bairro: z.string().min(1, "Por favor, insira um bairro válido"),
     }),
